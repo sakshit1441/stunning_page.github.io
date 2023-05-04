@@ -1,0 +1,212 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/*   HEADER STARTS HERE    */
+
+li , a , button {   
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+/*    NAVBAR STYLING STARTS HERE [ HEADER ]    */
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav_link li a {
+    position: relative;
+    letter-spacing: 0.5px;
+    color: grey;
+    padding: 0 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_link li a:hover {
+    color: black;
+    font-weight: bold;
+    
+}
+
+.nav_link li a::after {
+    content: "";
+    position: absolute;
+    background-color: #8071D0;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s linear;
+}
+
+.nav_link li a:hover:after {
+    width: 100%;
+}
+
+/*    BUTTON STYLING STARTS HERE [ HEADER ]    */
+
+Header button {
+    padding: 20px 30px;
+    background-color: #FFD8DB;
+    color: #2b13ff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/*    MAIN STARTS HERE    */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-cont {
+    margin: 0px 50px 50px 50px;
+    padding: 20px 10px;
+}
+
+.main-cont h1 {
+    font-size: 100px;
+    padding: 0px 0px 50px 0px;
+}
+
+.main-cont h1 span {
+    color:#8071D0;
+}
+
+.main-cont p {
+    font-size:22px;
+    color: rgb(75, 75, 75);
+    padding-bottom: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btn img {
+    padding: 0px 15px;
+}
+.new-btn {
+    padding: 20px 30px;
+    background-color: #5243C0;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*   TABLE STARTS HERE   */
+
+table {
+    margin-top: 80px;
+    border-radius: 20px;
+    background-color: rgba(209, 209, 209, 0.139);
+    align-items: center;
+}
+
+/*   ROW HOVER STARTS HERE   */
+
+.row {
+    margin: 15px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in;
+}
+
+.row:hover {
+    background-color: rgba(255, 255, 255, 0.706);
+    border-radius: 15px;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px 3px rgba(160, 160, 160, 0.2) , 
+    -1px -1px 8px 3px rgba(160, 160, 160, 0.2);
+    cursor: pointer;
+}
+
+/*   IMAGE HOVER STARTS HERE   */
+
+.image {
+    position: relative;
+    padding: 0px 40px 30px 10px;
+}
+
+.image img {
+    position: absolute;
+    transition: opacity 1s ease;
+}
+
+/* .row:hover .image img.blue:hover {
+    opacity: 0;
+} */
+
+table .row:hover .image img.gray {
+    opacity: 0;
+}
+
+/* table .row:hover .image img{
+    transform: scale(1.1);
+} */
+
+/*   TABLE DATA / CONTENT STARTS HERE   */
+
+td {
+    padding: 8px;
+}
+
+table button {
+    width: 30px;
+    height: 15px;
+    border: none;
+    border-radius: 30px;
+}
+
+#row-1 button {
+    background-color: #FED7DA;
+}
+
+#row-2 button {
+    background-color: #FD6534;
+}
+
+#row-3 button {
+    background-color: #9ED095;
+}
+
+#row-4 button {
+    background-color: #FFE4A0;
+}
+
+.row #description {
+    font-weight: bold;
+}
+
+.row #date {
+    color: rgba(75, 75, 75, 0.6);
+}
